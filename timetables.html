@@ -27,26 +27,24 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="#">Home
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="stoplist.html">Stop List
-        </a>
-
+            <a class="nav-link" href="stoplist.html">Stop List</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Favourites
-                    <span class="sr-only">(current)</span>
-
-            </a>
+          <li class="nav-item">
+            <a class="nav-link" href="favs.html">Favourites</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="near.html">Stops Near Me</a>
           </li>
-        </li>
-        <li class="nav-item">
-          <a class ="nav-link" href="tools.html">Tools</a>
-        </li>
+          <li class="nav-item active">
+            <a class ="nav-link" href="tools.html">Tools
+                <span class="sr-only">(current: timetables)</span>
+
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -56,18 +54,26 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Favourite Bus Stops</h1>
-        <p style="padding-top: 5%" class="lead">List of favourite bus stops</p>
-        <p>Click on a stop for real-time information</p>
+        <h1 class="mt-5">Timetables</h1>
+        <p style="padding-top: 5%" class="lead">Enter a route to search timetables.</p>
 
-        <div class="list-group">
-                <a href="realtime.html" class="list-group-item list-group-item-action">
-                  Stop 2 - Parnell Square
-                </a>
-                <a href="realtime.html" class="list-group-item list-group-item-action">Stop 16 - Nephin Road </a>
-                <a href="realtime.html" class="list-group-item list-group-item-action">Stop 17 - Drumcondra Road </a>
-              </div>
-       
+        <form>
+            <div class="form-group">
+              <label >Enter Route Number</label>
+              <input class="form-control" placeholder="1, 16, 41...">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Select Direction</label>
+              <select class="form-control">
+                <option>Towards Dublin Airport</option>
+                <option>Towards Balinteer</option>
+              </select>
+            </div>
+            <a target="_blank" href="https://www.dublinbus.ie/Your-Journey1/Timetables/All-Timetables/16-2/"><button type="button" class="btn btn-primary">Find Timetable</button></a>
+
+          </form>
+
+
         <!-- <ul class="list-unstyled">
           <li>Bootstrap 4.3.1</li>
           <li>jQuery 3.4.1</li>
