@@ -53,40 +53,39 @@
 
   <!-- Page Content -->
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Route Planner</h1>
-        <p style="padding-top: 5%" class="lead">Enter a start and end destination.</p>
-
-        <form>
-          <div class="form-group">
-            <label>Start Destination</label>
-            <input type="text" class="form-control" placeholder="City Centre, Ballinteer,...">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Route Planner</h1>
+          <p style="padding-top: 5%" class="lead">Enter a start and end destination.</p>
+  
+          <form>
+            <div class="form-group">
+              <label>Start Destination</label>
+              <input type="text" class="form-control" placeholder="City Centre, Ballinteer,...">
+            </div>
+            <div class="form-group">
+              <label>End Destination</label>
+              <input type="text" class="form-control" placeholder="City Centre, Airport,...">
+            </div>
+          </form>
+          <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#directions"
+              aria-expanded="false" aria-controls="collapseExample">
+              Show Directions
+            </button>
+          </p>
+          <div class="collapse" id="directions">
+            <div class="card card-body">
+  
+  
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-train"></i>  Drumcondra Station > Dublin Airport (Terminal 1)  <i class="fas fa-plane"></i></li>
+                <li class="list-group-item"><i class="fa fa-bus"></i>  Take bus (16 towards Dublin Airport) from Drumcondra Rd, stop 17 to Dublin Airport, stop 7347</li>
+                <li class="list-group-item"><i class="fas fa-walking"></i>  Walk approximately 100 metres to Dublin Airport Terminal 1</li>
+  
+              </ul>
+            </div>
           </div>
-          <div class="form-group">
-            <label>End Destination</label>
-            <input type="text" class="form-control" placeholder="City Centre, Airport,...">
-          </div>
-        </form>
-        <p>
-<link rel="stylesheet" href="https://cdnjs.buttflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#directions"
-            aria-expanded="false" aria-controls="collapseExample">
-            Show Directions
-          </button>
-        </p>
-        <div class="collapse" id="directions">
-          <div class="card card-body">
-
-
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><i class="fas fa-train"></i>  Drumcondra Station > Dublin Airport (Terminal 1)  <i class="fas fa-plane"></i></li>
-              <li class="list-group-item"><i class="fa fa-bus"></i>  Take bus (16 towards Dublin Airport) from Drumcondra Rd, stop 17 to Dublin Airport, stop 7347</li>
-              <li class="list-group-item"><i class="fas fa-walking"></i>  Walk approximately 100 metres to Dublin Airport Terminal 1</li>
-
-            </ul>
-          </div>
-        </div>
 
 
         <!-- <ul class="list-unstyled">

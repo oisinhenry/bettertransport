@@ -52,21 +52,48 @@
 
   <!-- Page Content -->
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Fare Calculator</h1>
-        <p style="padding-top: 5%" class="lead">Enter a start and end destination.</p>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Fare Calculator</h1>
+          <p style="padding-top: 5%" class="lead">Enter a start and end destination.</p>
+  
+          <form>
+            <div class="form-group">
+              <label>Start Destination</label>
+              <input type="text" class="form-control" placeholder="City Centre, Ballinteer,...">
+            </div>
+            <div class="form-group">
+              <label>End Destination</label>
+              <input type="text" class="form-control" placeholder="City Centre, Airport,...">
+            </div>
+            <div class="form-group">
+                <label>Select Ticket Category</label>
 
-
-
-
-        <!-- <ul class="list-unstyled">
-          <li>Bootstrap 4.3.1</li>
-          <li>jQuery 3.4.1</li>
-        </ul> -->
-      </div>
-    </div>
-  </div>
+            <select class="form-control">
+              <option>Child</option>
+              <option>Student (2nd Level)</option>
+              <option>Student (3rd Level)</option>
+              <option>Adult</option>
+  
+            </select>
+            </div>
+          </form>
+          <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#directions"
+              aria-expanded="false" aria-controls="collapseExample">
+              Calculate Fare
+            </button>
+          </p>
+          <div class="collapse" id="directions">
+            <div class="card card-body">
+  
+  
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-success">Your fare is 3 Euro</li>
+  
+              </ul>
+            </div>
+          </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
